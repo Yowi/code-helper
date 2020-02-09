@@ -26,6 +26,7 @@
     },
     "workbench.iconTheme": "material-icon-theme",
     "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "window.zoomLevel": 0,
     "sync.gist": "[your gist]",
     "sync.forceDownload": true,
