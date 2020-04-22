@@ -1,21 +1,24 @@
 # VS Code Settings
 
-> update 2020-02-08（VS Code v1.42）
+> update 2020-04-22（VS Code v1.44）
 
 ## Extensions
 
-*   bracket-pair-colorizer v1.0.61
-*   code-settings-sync v3.4.3
-*   gitlens v10.2.0
-*   material-icon-theme v3.9.2
-*   path-intellisense v1.4.2
-*   svn-scm v2.6.1
-*   theme-dracula v2.19.2
-*   vetur v0.23.0
-*   vscode-ant-design-vue-helper v1.0.6
-*   vscode-eslint v2.0.15
-*   vscode-language-pack-zh-hans v1.42.2
-*   vuehelper v0.1.0
+- bracket-pair-colorizer v1.0.61
+- code-settings-sync v3.4.3
+- EditorConfig v0.14.5
+- gitlens v10.2.1
+- JavaScriptSnippets v1.8.0
+- material-icon-theme v4.0.1
+- npm-intellisense v1.3.0
+- path-intellisense v1.4.2
+- prettier-vscode v4.4.0
+- theme-dracula v2.21.0
+- vetur v0.24.0
+- vscode-ant-design-vue-helper v1.0.6
+- vscode-eslint v2.1.5
+- vscode-language-pack-zh-hans v1.44.2
+- vuehelper v0.1.0
 
 ## Settings.json
 
@@ -27,11 +30,10 @@
     "workbench.iconTheme": "material-icon-theme",
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "window.zoomLevel": 0,
-    "sync.gist": "[your gist]",
+    "window.zoomLevel": 1,
+    "sync.gist": "ec251e8ca2a58ad8341f484c464e6532",
     "sync.forceDownload": true,
     "workbench.colorTheme": "Dracula",
-    // 2020-02-08 https://zhuanlan.zhihu.com/p/103492877
     // 设置保存时格式化。用于格式化html和css程序
     "editor.formatOnSave": true,
     // 关闭js/ts的默认format,统一用eslint进行格式化（tslint已经不维护了，所以转eslint吧）
@@ -47,7 +49,9 @@
     // 开启eslint自动修复js/ts功能
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    // 末尾加逗号，默认是 es5
+    "prettier.trailingComma": "none"
 }
 ```
 
@@ -55,5 +59,5 @@
 
 ### Settings Sync
 
-* `Shift + Option + U` 上传；`Shift + Option + D` 下载。
-* 在 `设置` 中把「Sync:Force Download」选项选上。
+- `Shift + Option + U` 上传；`Shift + Option + D` 下载。
+- 在 `设置` 中把「Sync:Force Download」选项选上。
